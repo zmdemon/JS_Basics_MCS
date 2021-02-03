@@ -1,11 +1,11 @@
-const bodyVar = document.querySelector("body");
-const pageVar = document.querySelector(".page");
-const nameVar = document.querySelector(".name");
-const imgVar = document.querySelector("img");
-const bioVar = document.querySelector(".short-bio");
+const body = document.querySelector("body");
+const page = document.querySelector(".page");
+const name = document.querySelector(".name");
+const img = document.querySelector("img");
+const bio = document.querySelector(".short-bio");
 
-bodyVar.style.backgroundColor = "#696969";
-pageVar.style.color = "ghostwhite";
-nameVar.innerHTML = "DJ Rashad";
-imgVar.setAttribute("src", "https://www.rokolectiv.ro/archive/2012/content/6.Day4/0.DJRashad/rashad.jpg");
-bioVar.className += " animated";
+body.style.backgroundColor = "#696969";
+page.style.color = "ghostwhite";
+name.innerHTML = "DJ Rashad";
+img.setAttribute("src", "https://www.rokolectiv.ro/archive/2012/content/6.Day4/0.DJRashad/rashad.jpg");
+bio.className += " animated";
