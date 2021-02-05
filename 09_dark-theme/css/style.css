@@ -13,6 +13,7 @@ main {
 
 section {
 	width: 40%;
+	min-width: 45rem;
 }
 
 .button {
