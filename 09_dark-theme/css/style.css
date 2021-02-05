@@ -1,0 +1,36 @@
+html {
+	font-size: 62.5%;
+}
+
+
+main {
+	flex-direction: column;
+	display:flex;
+	align-items: center;
+	font-size: 2.5em;
+	line-height: 1.2;
+}
+
+section {
+	width: 40%;
+}
+
+.button {
+	outline:none;
+	font-family: arial;
+	background-color: black;
+	color: white;
+	position: fixed;
+	border: 3px solid black;
+	top: 5rem;
+	right:  5rem;
+	height: 5rem;
+	width: 10rem;
+	font-weight: bold;	
+}
+
+#rmButton {
+	background-color: #F0E68C;
+	color: black;
+	top: 12rem;
+}
