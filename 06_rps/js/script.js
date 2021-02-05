@@ -1,7 +1,3 @@
-const rock = 0;
-const scissors = 1;
-const paper = 2;
-
 let playerChoice = document.querySelector("#playerChoice");
 let computerChoice = document.querySelector("#computerChoice");
 let result = document.querySelector("#result");
@@ -15,9 +11,9 @@ let computer = Math.floor(Math.random() * 3);
 computerChoice.innerHTML = computer;
 
 //проверка input
-if (player == 0 || player == 1 || player == 2) { 
+if (player === 0 || player === 1 || player === 2) { 
 
-if ((player == rock && computer == scissors)|| (player == scissors && computer == paper) || (player == paper && computer == rock)) {
+if ((player === 0 && computer === 1)|| (player === 1 && computer === 2) || (player === 2 && computer === 0)) {
     console.log("you: " + player + ", " + "computer: " + computer + ", player won");
     result.innerHTML = " player won";
 }  else if (player != computer) {
@@ -37,7 +33,7 @@ if ((player == rock && computer == scissors)|| (player == scissors && computer =
 
 
 // опишем все условия и будем выводить в консоль 'computer win' или 'player win'
-/*if (player == 0 || player == 1 || player == 2) {
+/*if (player === 0 || player == 1 || player == 2) {
   if (player == computer) {
     console.log("you: " + player + ", " + "computer: " + computer + ", draw");
     result.innerHTML = " draw";
