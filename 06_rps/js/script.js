@@ -14,6 +14,25 @@ playerChoice.innerHTML = player;
 let computer = Math.floor(Math.random() * 3);
 computerChoice.innerHTML = computer;
 
+//проверка input
+if (player == 0 || player == 1 || player == 2) { 
+
+if ((player == 0 && computer == 1)|| (player == 1 && computer == 2) || (player == 2 && computer == 0)) {
+    console.log("you: " + player + ", " + "computer: " + computer + ", player won");
+    result.innerHTML = " player won";
+}  else if (player != computer) {
+    console.log("you: " + player + ", " + "computer: " + computer + ", computer won");
+    result.innerHTML = " computer won";
+} else {
+    console.log("you: " + player + ", " + "computer: " + computer + ", draw");
+    result.innerHTML = " draw";
+} 
+
+} else {
+  console.log("incorrect input");
+  result.innerHTML = " player technical defeat. Incorrect input";
+}
+
 
 
 
@@ -40,21 +59,3 @@ computerChoice.innerHTML = computer;
   result.innerHTML = " player technical defeat. Incorrect input";
 }*/
 
-//проверка input
-if (player == 0 || player == 1 || player == 2) { 
-
-if ((player == 0 && computer == 1)|| (player == 1 && computer == 2) || (player == 2 && computer == 0)) {
-    console.log("you: " + player + ", " + "computer: " + computer + ", player won");
-    result.innerHTML = " player won";
-}  else if (player != computer) {
-    console.log("you: " + player + ", " + "computer: " + computer + ", computer won");
-    result.innerHTML = " computer won";
-} else {
-    console.log("you: " + player + ", " + "computer: " + computer + ", draw");
-    result.innerHTML = " draw";
-} 
-
-} else {
-  console.log("incorrect input");
-  result.innerHTML = " player technical defeat. Incorrect input";
-}
