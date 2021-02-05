@@ -1,4 +1,4 @@
-let a = prompt()
+let a = prompt("Введите число");
 if (a<0) {
 	//alert(-a);
 	console.log(-a);
