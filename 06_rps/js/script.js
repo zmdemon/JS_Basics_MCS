@@ -17,7 +17,7 @@ computerChoice.innerHTML = computer;
 //проверка input
 if (player == 0 || player == 1 || player == 2) { 
 
-if ((player == 0 && computer == 1)|| (player == 1 && computer == 2) || (player == 2 && computer == 0)) {
+if ((player == rock && computer == scissors)|| (player == scissors && computer == paper) || (player == paper && computer == rock)) {
     console.log("you: " + player + ", " + "computer: " + computer + ", player won");
     result.innerHTML = " player won";
 }  else if (player != computer) {
