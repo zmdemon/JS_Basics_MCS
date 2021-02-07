@@ -1,0 +1,35 @@
+@import url(reset.css);
+html {
+    font-size: 62.5%;
+}
+
+.board {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.crypto {
+    font-size: 2rem;
+    font-family: "Arial", sans-serif;
+}
+
+.bar {
+    height: 2.5rem;
+    background-color: darkred;
+    width: 0.2rem;
+}
+
+.title {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.amount {
+    margin-bottom: 1rem;
+}
+.bar {
+    margin-bottom: 1rem;
+}
