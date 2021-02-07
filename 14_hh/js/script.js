@@ -9,9 +9,9 @@ let newSchool = [
     ]
 ];
 
-newSchool.forEach(function (country){
+newSchool.forEach(function (country) {
     country.forEach(function (profession) {
-        profession.forEach(function (name){
+        profession.forEach(function (name) {
             console.log(name);
         })
     })
@@ -20,7 +20,7 @@ newSchool.forEach(function (country){
 for (country in newSchool) {
     for (profession in newSchool[country]) {
         for (name in newSchool[country][profession])
-        console.log(newSchool[country][profession][name]);
+            console.log(newSchool[country][profession][name]);
     }
 }
 

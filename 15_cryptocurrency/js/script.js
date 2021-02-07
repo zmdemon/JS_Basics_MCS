@@ -42,7 +42,7 @@ let colors = ['#6b5b95', '#feb236', '#d64161', '#ff7b25', '#00B3E6',
     '#FF3380', '#CCCC00', '#66E64D', '#4D80CC', '#9900B3',
     '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'];
 
-for (let i=0; i<crypto.length; i++) {
+for (let i = 0; i < crypto.length; i++) {
     board.innerHTML += "<div class=\"crypto\">\n" +
         "\t\t\t<h1 class=\"title\"></h1>\n" +
         "\t\t\t<p class=\"amount\"></p>\n" +
@@ -55,11 +55,11 @@ const prices = document.querySelectorAll(".amount");
 const bars = document.querySelectorAll(".bar");
 
 
-for (let i=0; i<crypto.length; i++) {
+for (let i = 0; i < crypto.length; i++) {
     titles[i].innerHTML = crypto[i].name;
     prices[i].innerHTML = crypto[i].price;
-    bars[i].style.width = crypto[i].price/2 + "px";
-    bars[i].style.backgroundColor = colors[Math.floor(Math.random()*50)];
+    bars[i].style.width = crypto[i].price / 2 + "px";
+    bars[i].style.backgroundColor = colors[Math.floor(Math.random() * 50)];
 
 }
 
