@@ -19,7 +19,7 @@ section {
 
 .button {
 	outline:none;
-	font-family: arial;
+	font-family: arial, sans-serif;
 	background-color: black;
 	color: white;
 	position: fixed;
