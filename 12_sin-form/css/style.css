@@ -1,0 +1,67 @@
+@import url(reset.css);
+
+* {
+   box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    background-color: antiquewhite;
+
+
+}
+.form-div {
+    min-height: 21rem;
+    min-width: 20.5rem;
+    background-color: gainsboro;
+    padding: 1.5rem;
+    border: .5rem solid crimson ;
+    border-radius: .2rem;
+    transform: scale(1.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input,output {
+    display: inline-block;
+    margin: 1rem 0;
+    outline: none;
+}
+
+input[type="submit"] {
+
+    height: 3rem;
+    background-color: darkgray;
+    border: .3rem solid black;
+    font-size: 0.6em;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 15rem;
+    font-size: 0.6em;
+    height: 3rem;
+    border: .3rem solid black;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+.result {
+    margin-top: 3rem;
+}
