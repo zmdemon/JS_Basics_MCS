@@ -7,7 +7,15 @@ let watchesSum = Number(prompt("one watch cost?"));
 let earringsSum = Number(prompt("one earrings pair cost?"));
 //const result = document.selectorQuery("#result");
 
+// 1 вариант
 let haveEnough = (totalCash, watchesCount, earringsCount, watchesSum,earringsSum) => {	
+	if ((watchesCount*watchesSum + earringsCount*earringsSum) <= totalCash) {
+		return "Enough $$$";
+	} else return "Not enough $$$";
+}
+
+// 2 вариант (верный)
+function haveEnough(totalCash, watchesCount, earringsCount, watchesSum, earringsSum) {	
 	if ((watchesCount*watchesSum + earringsCount*earringsSum) <= totalCash) {
 		return "Enough $$$";
 	} else return "Not enough $$$";
