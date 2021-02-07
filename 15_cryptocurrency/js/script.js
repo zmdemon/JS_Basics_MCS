@@ -29,10 +29,6 @@ let crypto = [
         name: "Sdash",
         price: 66.6
     }
-
-
-
-
 ];
 
 let colors = ['#6b5b95', '#feb236', '#d64161', '#ff7b25', '#00B3E6',
@@ -67,7 +63,3 @@ for (let i=0; i<crypto.length; i++) {
 
 }
 
-// crypto.forEach(function (cryptocurrency){
-//     titles[].innerHTML = cryptocurrency.name;
-//     prices[cryptocurrency].innerHTML = cryptocurrency.price;
-// })
