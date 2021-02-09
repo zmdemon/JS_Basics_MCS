@@ -46,7 +46,7 @@ window.addEventListener("load", function () {
         let hasRest = form.elements.rest.value;
         let hasMoney = form.elements.money.value;
 
-        if (name === "" || hasMoney === "" || hasCat === "" || hasRest === "") {
+        if (hasMoney === "" || hasCat === "" || hasRest === "") {
             name !== "" ? personName.innerHTML = name + ":" : personName.innerHTML = "";
             icon.innerHTML = "🤔";
         } else {
