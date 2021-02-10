@@ -13,3 +13,10 @@ class angryTiger extends Tiger {
         console.log("ZzZzzZzZz");
     }
 }
+
+const Sharkhan = new Tiger("Sharkhan");
+
+const Tigra = new angryTiger("Tigra");
+
+Tigra.feedCat();
+Tigra.throwDart();
