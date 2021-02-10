@@ -49,6 +49,15 @@ for (let i = 0; i < crypto.length; i++) {
         "\t\t\t<div class=\"bar\"></div>\n" +
         "\t\t</div>";
 }
+function maxPriceFind(array) {
+    let maxPrice = -1;
+    for (key of array) {
+        if(key.price>maxPrice) maxPrice = key.price;
+    }
+    return maxPrice;
+}
+
+let maxPrice = maxPriceFind(crypto);
 
 const titles = document.querySelectorAll(".title");
 const prices = document.querySelectorAll(".amount");
@@ -58,7 +67,7 @@ const bars = document.querySelectorAll(".bar");
 for (let i = 0; i < crypto.length; i++) {
     titles[i].innerHTML = crypto[i].name;
     prices[i].innerHTML = crypto[i].price;
-    bars[i].style.width = crypto[i].price / 2 + "px";
+    bars[i].style.width = (crypto[i].price / maxPrice)*80 + "%";
     bars[i].style.backgroundColor = colors[Math.floor(Math.random() * 50)];
 
 }
